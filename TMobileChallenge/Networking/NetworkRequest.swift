@@ -46,13 +46,6 @@ class NetworkRequest {
             }
             
         }.resume()
-        
-        
-    }
-    
-    //MARK: - Fetching thumbnails
-    static func fetchThumbnail(completion: @escaping (Result<UIImage, PostError>) -> Void) {
-        
     }
     
 }
