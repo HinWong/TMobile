@@ -7,20 +7,20 @@
 
 import Foundation
 
-struct Reddit: Decodable {
+struct Reddit: Codable {
     let data: Data
 }
 
-struct Data: Decodable {
+struct Data: Codable {
     let children: [Post]
     let after: String?
 }
 
-struct Post: Decodable {
+struct Post: Codable {
     let data: PostInfo
 }
 
-struct PostInfo: Decodable {
+struct PostInfo: Codable {
     let title: String
     let thumbnail: String
     let thumbnail_height: Int?
